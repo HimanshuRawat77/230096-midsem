@@ -1,0 +1,53 @@
+{
+    "student": {
+      "name": "Himanshu Rawat",
+      "roll_number": "230096",
+      "email": "himanshu.23csai@nst.rishihood.edu.in"
+    },
+    "assignment": {
+      "course": "Advanced Machine Learning",
+      "part": "Part A - Research Paper Selection",
+      "submission_date": "2026-03-02"
+    },
+    "llm_tool_used": "ChatGPT (OpenAI GPT-5)",
+    "total_interactions": 3,
+    "llm_usage": [
+      {
+        "id": 1,
+        "purpose": "Clarifying Part A eligibility constraints",
+        "my_reasoning_before_prompt": "I carefully read the exam instructions and noted the constraints: publication between 2010–2012, from ICML/NeurIPS/AISTATS/KDD, classical ML only, methodological contribution required, no deep learning, no survey papers. I wanted to verify that candidate papers strictly satisfied all conditions.",
+        "prompt": "Does the paper 'Adaptive Subgradient Methods for Online Learning and Stochastic Optimization' satisfy the Part A constraints: 2010–2012 publication, ICML/NeurIPS/AISTATS/KDD venue, classical ML method, not deep learning, not survey?",
+        "response_summary": "The LLM confirmed that the paper was published in ICML 2011, introduced AdaGrad (a classical optimization method), and satisfied all stated constraints.",
+        "how_i_used_it": "Used as a verification step after independently identifying the paper from ICML 2011 proceedings.",
+        "influenced_decision": false
+      },
+      {
+        "id": 2,
+        "purpose": "Understanding the core contribution (AdaGrad)",
+        "my_reasoning_before_prompt": "After reading the abstract and introduction of the paper, I understood that AdaGrad modifies the learning rate adaptively. However, I wanted a simplified explanation to ensure conceptual clarity before committing to it.",
+        "prompt": "Explain AdaGrad in simple terms and how it differs from standard stochastic gradient descent.",
+        "response_summary": "The LLM explained that AdaGrad adapts the learning rate for each parameter based on historical gradient information, making updates smaller for frequently occurring features and larger for rare features.",
+        "how_i_used_it": "Used to strengthen my intuitive understanding before reading the theoretical regret analysis section in the paper.",
+        "influenced_decision": false
+      },
+      {
+        "id": 3,
+        "purpose": "Assessing reproducibility for Part B",
+        "my_reasoning_before_prompt": "I wanted to confirm that AdaGrad can be implemented on standard datasets without heavy compute or restricted data access.",
+        "prompt": "Can AdaGrad be reproduced on small public datasets using CPU-only resources for logistic regression or SVM experiments?",
+        "response_summary": "The LLM confirmed that AdaGrad can be implemented easily using standard datasets and compared with SGD without requiring GPU or special infrastructure.",
+        "how_i_used_it": "Used to confirm feasibility for Part B reproduction and experimentation.",
+        "influenced_decision": false
+      }
+    ],
+    "paper_selected": {
+      "title": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization",
+      "authors": "John Duchi, Elad Hazan, Yoram Singer",
+      "venue": "International Conference on Machine Learning (ICML)",
+      "year": 2011,
+      "link": "https://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf",
+      "method": "Adaptive Subgradient Optimization (AdaGrad) for Convex Machine Learning Models"
+    },
+    "reflection": "I used the LLM primarily for verification, clarification, and drafting assistance. The identification of the paper, checking the conference year, and confirming that no classmate selected it were done independently. I read the abstract and introduction myself and verified key claims directly from the paper. I am confident that I understand the AdaGrad update rule and its adaptive learning rate mechanism sufficiently to explain and implement it independently in Parts B and C.",
+    "disclaimer": "All LLM interactions have been logged transparently. I take full responsibility for the paper selection and all implementation, experimentation, and explanation in subsequent parts of the examination."
+  }
